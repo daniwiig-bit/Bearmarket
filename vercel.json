@@ -4,10 +4,5 @@
   "outputDirectory": "bearmarket/build",
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
-  ],
-  "functions": {
-    "api/price.py": {
-      "runtime": "python3.12"
-    }
-  }
+  ]
 }
