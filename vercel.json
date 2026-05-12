@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd bearmarket && npm install && npm run build",
+  "outputDirectory": "bearmarket/build",
+  "functions": {
+    "api/price.py": {
+      "runtime": "python3.12"
+    }
+  }
+}
