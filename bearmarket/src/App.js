@@ -106,12 +106,12 @@ function loadState() {
       const p = JSON.parse(raw);
       // Migrate old v1 format that lacked capital fields
       if (!('cash' in p)) {
-        return { cash: STARTING_CAPITAL, realizedPnl: 0, bear: p.bear || [], bull: p.bull || [], history: [], usdNok: 10.5 };
+        return { cash: STARTING_CAPITAL, realizedPnl: 0, bear: p.bear || [], bull: p.bull || [], history: [], usdNok: 9.2 };
       }
       return p;
     }
   } catch {}
-  return { cash: STARTING_CAPITAL, realizedPnl: 0, bear: [], bull: [], history: [], usdNok: 10.5 };
+  return { cash: STARTING_CAPITAL, realizedPnl: 0, bear: [], bull: [], history: [], usdNok: 9.2 };
 }
 
 function saveState(s) {
