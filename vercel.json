@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "buildCommand": "cd bearmarket && npm install && npm run build",
+  "outputDirectory": "bearmarket/build",
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
